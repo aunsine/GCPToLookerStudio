@@ -4,7 +4,7 @@ config-version: 2
 
 profile: my_dbt_project
 
-model-paths: ["dbt"]
+model-paths: ["models"]
 macro-paths: ["macros"]
 
 target-path: "target"
@@ -13,8 +13,7 @@ clean-targets:
   - "dbt_packages"
 
 models:
-  my_dbt_project:
-    staging:
-      materialized: view
-    serving:
-      materialized: table
+  staging:
+    materialized: view
+  example:
+    materialized: view

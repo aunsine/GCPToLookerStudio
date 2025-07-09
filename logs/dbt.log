@@ -324,3 +324,462 @@ parsing.
 [0m16:33:39.803551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228EA086140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228974F54B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000228974F5BD0>]}
 [0m16:33:39.803551 [debug] [MainThread]: Flushing usage events
 [0m16:33:40.226993 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:40:34.933383 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD1F786110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD21613A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD21612260>]}
+
+
+============================== 16:40:34.933383 | 6bb5894f-05eb-45f7-859b-7e136af6acc7 ==============================
+[0m16:40:34.933383 [info ] [MainThread]: Running with dbt=1.10.3
+[0m16:40:34.933383 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt compile', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:40:38.345106 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD1D66CBB0>]}
+[0m16:40:38.412272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD42658460>]}
+[0m16:40:38.412272 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:40:39.085148 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m16:40:39.136010 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:40:39.136010 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD4C95A4D0>]}
+[0m16:40:40.122501 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_dbt_project.staging
+- models.my_dbt_project.serving
+[0m16:40:40.136855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD4C943C70>]}
+[0m16:40:40.190288 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:40:40.193516 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:40:40.207927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD4C9E9D20>]}
+[0m16:40:40.207927 [info ] [MainThread]: Found 493 macros
+[0m16:40:40.207927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6bb5894f-05eb-45f7-859b-7e136af6acc7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD4CAFA530>]}
+[0m16:40:40.207927 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:40:40.207927 [debug] [MainThread]: Command end result
+[0m16:40:40.244320 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:40:40.247278 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:40:40.247278 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m16:40:40.247278 [debug] [MainThread]: Command `dbt compile` succeeded at 16:40:40.247278 after 5.53 seconds
+[0m16:40:40.247278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD1F786110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD1F841600>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CD4C943D00>]}
+[0m16:40:40.255597 [debug] [MainThread]: Flushing usage events
+[0m16:40:40.707242 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:42:46.265543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC1860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC969120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFCFCFDC0>]}
+
+
+============================== 16:42:46.265543 | bc325eba-ef1e-432e-a9f1-f637d34fc4b5 ==============================
+[0m16:42:46.265543 [info ] [MainThread]: Running with dbt=1.10.3
+[0m16:42:46.265543 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt compile -m stg_properties', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:42:46.265543 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m16:42:46.265543 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC96A080>]}
+[0m16:42:49.447047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFE012140>]}
+[0m16:42:49.510524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC26F880>]}
+[0m16:42:49.510524 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:42:50.186971 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m16:42:50.298790 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:42:50.298790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFE013CA0>]}
+[0m16:42:51.305075 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.my_dbt_project.serving
+- models.my_dbt_project.staging
+[0m16:42:51.305075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CA9367AF0>]}
+[0m16:42:51.371382 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:42:51.376194 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:42:51.390331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CA93C0BB0>]}
+[0m16:42:51.390331 [info ] [MainThread]: Found 493 macros
+[0m16:42:51.390331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bc325eba-ef1e-432e-a9f1-f637d34fc4b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CA94F5F00>]}
+[0m16:42:51.390331 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m16:42:51.390331 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:42:51.390331 [debug] [MainThread]: Command end result
+[0m16:42:51.428269 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:42:51.432652 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:42:51.432652 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m16:42:51.439169 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:42:51.441908 [debug] [MainThread]: Command `dbt compile` succeeded at 16:42:51.441908 after 5.29 seconds
+[0m16:42:51.443921 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC1860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CA9367A00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023CFC261060>]}
+[0m16:42:51.444356 [debug] [MainThread]: Flushing usage events
+[0m16:42:51.876147 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:56:03.352684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D20DA6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D21C30F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D21C33850>]}
+
+
+============================== 16:56:03.368626 | 722e5897-4001-4720-9074-23235221aabb ==============================
+[0m16:56:03.368626 [info ] [MainThread]: Running with dbt=1.10.3
+[0m16:56:03.368626 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile -m stg_properties', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:56:03.368626 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m16:56:03.368626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '722e5897-4001-4720-9074-23235221aabb', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D21C30AF0>]}
+[0m16:56:06.766377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D4DB6BA60>]}
+[0m16:56:06.829396 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D20F449D0>]}
+[0m16:56:06.829396 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m16:56:07.475466 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m16:56:07.523815 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:56:07.523815 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D215B7280>]}
+[0m16:56:08.518640 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m16:56:08.523936 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D4DF72860>]}
+[0m16:56:08.587295 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:56:08.587295 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:56:08.659850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D4DFBF8B0>]}
+[0m16:56:08.665156 [info ] [MainThread]: Found 493 macros
+[0m16:56:08.667184 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '722e5897-4001-4720-9074-23235221aabb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D4DF59D80>]}
+[0m16:56:08.668985 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m16:56:08.670119 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m16:56:08.670119 [debug] [MainThread]: Command end result
+[0m16:56:08.720758 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m16:56:08.720758 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m16:56:08.720758 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m16:56:08.720758 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m16:56:08.735307 [debug] [MainThread]: Command `dbt compile` succeeded at 16:56:08.735307 after 5.49 seconds
+[0m16:56:08.736412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D20DA6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D20E702B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000012D20E607F0>]}
+[0m16:56:08.736412 [debug] [MainThread]: Flushing usage events
+[0m16:56:09.199626 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:00:44.971443 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5DCD60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5FC128F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5FC10BE0>]}
+
+
+============================== 17:00:44.979603 | 9c6d7a16-087a-422f-89c0-d401634f3f0c ==============================
+[0m17:00:44.979603 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:00:44.982203 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:00:48.243893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9c6d7a16-087a-422f-89c0-d401634f3f0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5F5647C0>]}
+[0m17:00:48.307103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9c6d7a16-087a-422f-89c0-d401634f3f0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5F565360>]}
+[0m17:00:48.307103 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:00:48.990025 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:00:49.246900 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:00:49.246900 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:00:49.246900 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m17:00:49.246900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9c6d7a16-087a-422f-89c0-d401634f3f0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D0B10D1B0>]}
+[0m17:00:49.312745 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:00:49.315749 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:00:49.334972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9c6d7a16-087a-422f-89c0-d401634f3f0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D0B0BB130>]}
+[0m17:00:49.334972 [info ] [MainThread]: Found 493 macros
+[0m17:00:49.334972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9c6d7a16-087a-422f-89c0-d401634f3f0c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D0B0CBA00>]}
+[0m17:00:49.334972 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:00:49.334972 [debug] [MainThread]: Command end result
+[0m17:00:49.367380 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:00:49.371517 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:00:49.373546 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:00:49.373546 [debug] [MainThread]: Command `dbt compile` succeeded at 17:00:49.373546 after 4.57 seconds
+[0m17:00:49.373546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5DCD60E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5F5647C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D5DDA5C30>]}
+[0m17:00:49.373546 [debug] [MainThread]: Flushing usage events
+[0m17:00:49.862246 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:04:44.509699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995D860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025996C4CA60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025996C4ECE0>]}
+
+
+============================== 17:04:44.509699 | cd5390fb-560a-4e19-848c-b853f2aefc2a ==============================
+[0m17:04:44.509699 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:04:44.509699 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt list --select staging', 'send_anonymous_usage_stats': 'True'}
+[0m17:04:47.803023 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'cd5390fb-560a-4e19-848c-b853f2aefc2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259B8C16B90>]}
+[0m17:04:47.882091 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'cd5390fb-560a-4e19-848c-b853f2aefc2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995E6F880>]}
+[0m17:04:47.882091 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:04:48.622861 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:04:48.791039 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:04:48.791039 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:04:48.791039 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.example
+[0m17:04:48.791039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'cd5390fb-560a-4e19-848c-b853f2aefc2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259C31154B0>]}
+[0m17:04:48.898610 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:04:48.904636 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:04:48.977626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'cd5390fb-560a-4e19-848c-b853f2aefc2a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259C30C16F0>]}
+[0m17:04:48.977626 [warn ] [MainThread]: The selection criterion 'staging' does not match any enabled nodes
+[0m17:04:48.977626 [warn ] [MainThread]: No nodes selected!
+[0m17:04:48.977626 [debug] [MainThread]: Command `dbt list` succeeded at 17:04:48.977626 after 4.65 seconds
+[0m17:04:48.992942 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995D860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025995E6F880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000259C30CD510>]}
+[0m17:04:48.992942 [debug] [MainThread]: Flushing usage events
+[0m17:04:49.423426 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:05:02.464286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC16FF60B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC17EBCA00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC17EBECB0>]}
+
+
+============================== 17:05:02.464286 | 9f135d96-ce0c-4a6d-a10a-3c339c5d8391 ==============================
+[0m17:05:02.464286 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:05:02.480247 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt list -t staging', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:02.485374 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The profile 'my_dbt_project' does not have a target named 'staging'. The valid target names for this profile are:
+   - dev
+[0m17:05:02.487157 [debug] [MainThread]: Command `dbt list` failed at 17:05:02.485374 after 0.14 seconds
+[0m17:05:02.487157 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC16FF60B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC17F08FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EC17F0A950>]}
+[0m17:05:02.488268 [debug] [MainThread]: Flushing usage events
+[0m17:05:02.902770 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:05:47.266990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002016E1D6080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020170112230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201701110C0>]}
+
+
+============================== 17:05:47.283140 | 7bfee40c-6950-4738-bfaa-19fd6b7a2d08 ==============================
+[0m17:05:47.283140 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:05:47.283140 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:47.317740 [info ] [MainThread]: dbt version: 1.10.3
+[0m17:05:47.317740 [info ] [MainThread]: python version: 3.10.11
+[0m17:05:47.317740 [info ] [MainThread]: python path: C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\myenv\Scripts\python.exe
+[0m17:05:47.317740 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m17:05:50.583409 [info ] [MainThread]: Using profiles dir at C:\Users\Kwang\.dbt
+[0m17:05:50.583409 [info ] [MainThread]: Using profiles.yml file at C:\Users\Kwang\.dbt\profiles.yml
+[0m17:05:50.585430 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\dbt_project.yml
+[0m17:05:50.585430 [info ] [MainThread]: adapter type: bigquery
+[0m17:05:50.585430 [info ] [MainThread]: adapter version: 1.9.2
+[0m17:05:50.731278 [info ] [MainThread]: Configuration:
+[0m17:05:50.731278 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:05:50.731278 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:05:50.731278 [info ] [MainThread]: Required dependencies:
+[0m17:05:50.731278 [debug] [MainThread]: Executing "git --help"
+[0m17:05:50.865361 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:05:50.865361 [debug] [MainThread]: STDERR: "b''"
+[0m17:05:50.865361 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:05:50.881178 [info ] [MainThread]: Connection:
+[0m17:05:50.881178 [info ] [MainThread]:   method: service-account
+[0m17:05:50.881178 [info ] [MainThread]:   database: savvy-depot-465313-h2
+[0m17:05:50.881178 [info ] [MainThread]:   execution_project: savvy-depot-465313-h2
+[0m17:05:50.881178 [info ] [MainThread]:   schema: rightmove_property
+[0m17:05:50.881178 [info ] [MainThread]:   location: EU
+[0m17:05:50.887123 [info ] [MainThread]:   priority: interactive
+[0m17:05:50.888146 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m17:05:50.889177 [info ] [MainThread]:   impersonate_service_account: None
+[0m17:05:50.890258 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m17:05:50.891175 [info ] [MainThread]:   job_retries: 1
+[0m17:05:50.892100 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m17:05:50.893872 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m17:05:50.893872 [info ] [MainThread]:   timeout_seconds: 300
+[0m17:05:50.895060 [info ] [MainThread]:   client_id: None
+[0m17:05:50.896072 [info ] [MainThread]:   token_uri: None
+[0m17:05:50.897492 [info ] [MainThread]:   compute_region: None
+[0m17:05:50.897492 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m17:05:50.898783 [info ] [MainThread]:   gcs_bucket: None
+[0m17:05:50.899941 [info ] [MainThread]:   dataproc_batch: None
+[0m17:05:50.900939 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:05:51.593595 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m17:05:51.593595 [debug] [MainThread]: On debug: select 1 as id
+[0m17:05:51.593595 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:05:52.377057 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:bd4f302a-07c3-42d3-8130-0a6bb1156064&page=queryresults
+[0m17:05:52.863850 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:05:52.863850 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:05:52.869301 [debug] [MainThread]: Command `dbt debug` succeeded at 17:05:52.869301 after 5.78 seconds
+[0m17:05:52.869301 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m17:05:52.871324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002016E1D6080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002011B0EEB60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002011B0ED4B0>]}
+[0m17:05:52.873342 [debug] [MainThread]: Flushing usage events
+[0m17:05:53.289109 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:12.498369 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC89ED6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8AD91C60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8AD925F0>]}
+
+
+============================== 17:06:12.498369 | 8fa27b7b-f996-4d7b-ba68-9a5c6f17d010 ==============================
+[0m17:06:12.498369 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:06:12.498369 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt build -m stg_properties', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:06:12.498369 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+Usage of `--models`, `--model`, and `-m` is deprecated in favor of
+`--resource-type model --select`
+[0m17:06:12.514459 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '8fa27b7b-f996-4d7b-ba68-9a5c6f17d010', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8AD921D0>]}
+[0m17:06:15.847310 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8fa27b7b-f996-4d7b-ba68-9a5c6f17d010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8A70F970>]}
+[0m17:06:15.910733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8fa27b7b-f996-4d7b-ba68-9a5c6f17d010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8ADBD870>]}
+[0m17:06:15.910733 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:06:16.555902 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:06:16.698177 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:06:16.698177 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:06:16.698177 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.example
+[0m17:06:16.698177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8fa27b7b-f996-4d7b-ba68-9a5c6f17d010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB7319840>]}
+[0m17:06:16.749424 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:06:16.767839 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:06:16.977960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8fa27b7b-f996-4d7b-ba68-9a5c6f17d010', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB731C370>]}
+[0m17:06:16.988706 [info ] [MainThread]: Found 493 macros
+[0m17:06:16.988706 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m17:06:16.988706 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m17:06:16.988706 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m17:06:16.994592 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:06:16.996967 [debug] [MainThread]: Command end result
+[0m17:06:17.020471 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:06:17.024486 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:06:17.028498 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:06:17.028498 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- ModelParamUsageDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:06:17.032825 [debug] [MainThread]: Command `dbt build` succeeded at 17:06:17.032825 after 4.72 seconds
+[0m17:06:17.032825 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC89ED6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BCB5CC3A60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BC8AD62380>]}
+[0m17:06:17.032825 [debug] [MainThread]: Flushing usage events
+[0m17:06:17.480101 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:13:28.357583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB82C6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB83971C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019ABA211270>]}
+
+
+============================== 17:13:28.357583 | 8d2ec460-80d1-444f-ba4a-3907fb497c5a ==============================
+[0m17:13:28.357583 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:13:28.368560 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt compile --select stg_properties', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:13:31.727407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB8AAAFE0>]}
+[0m17:13:31.790867 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019ABA24F700>]}
+[0m17:13:31.790867 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:13:32.429681 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:13:32.492772 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:13:32.492772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB8AD7640>]}
+[0m17:13:33.373000 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m17:13:33.388765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE50DD420>]}
+[0m17:13:33.446711 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:13:33.452204 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:13:33.480250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE55DE9E0>]}
+[0m17:13:33.480250 [info ] [MainThread]: Found 493 macros
+[0m17:13:33.480250 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8d2ec460-80d1-444f-ba4a-3907fb497c5a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AE564DD80>]}
+[0m17:13:33.480250 [warn ] [MainThread]: The selection criterion 'stg_properties' does not match any enabled nodes
+[0m17:13:33.480250 [warn ] [MainThread]: Nothing to do. Try checking your model configs and model specification args
+[0m17:13:33.480250 [debug] [MainThread]: Command end result
+[0m17:13:33.510478 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:13:33.514598 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:13:33.519589 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:13:33.520181 [debug] [MainThread]: Command `dbt compile` succeeded at 17:13:33.520181 after 5.33 seconds
+[0m17:13:33.520181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB82C6110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB8394E20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019AB8381600>]}
+[0m17:13:33.520181 [debug] [MainThread]: Flushing usage events
+[0m17:13:34.061862 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:14:03.341844 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011978DB60B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979599120>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979BFFDC0>]}
+
+
+============================== 17:14:03.341844 | b8e65db2-791a-4b28-8116-4b11f82e8cac ==============================
+[0m17:14:03.341844 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:14:03.341844 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt compile --select stg_properties', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:14:06.720049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979CD4820>]}
+[0m17:14:06.783169 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979A57E80>]}
+[0m17:14:06.783169 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:14:07.429180 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:14:07.523790 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:14:07.523790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979557910>]}
+[0m17:14:09.049547 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.example
+[0m17:14:09.065284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001198C56C280>]}
+[0m17:14:09.294227 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:14:09.294227 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:14:09.327782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001198C5B88B0>]}
+[0m17:14:09.327782 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 493 macros
+[0m17:14:09.327782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001198C56FAF0>]}
+[0m17:14:09.327782 [info ] [MainThread]: 
+[0m17:14:09.327782 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:14:09.327782 [info ] [MainThread]: 
+[0m17:14:09.327782 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:14:09.341353 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:14:09.342208 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:14:09.852511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b8e65db2-791a-4b28-8116-4b11f82e8cac', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001198AA12980>]}
+[0m17:14:09.859374 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:14:10.035791 [debug] [Thread-1 (]: Began running node model.my_dbt_project.stg_properties
+[0m17:14:10.043938 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.my_dbt_project.stg_properties'
+[0m17:14:10.050447 [debug] [Thread-1 (]: Began compiling node model.my_dbt_project.stg_properties
+[0m17:14:10.066362 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_project.stg_properties"
+[0m17:14:10.082027 [debug] [Thread-1 (]: Began executing node model.my_dbt_project.stg_properties
+[0m17:14:10.082027 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:14:10.084031 [debug] [Thread-1 (]: Finished running node model.my_dbt_project.stg_properties
+[0m17:14:10.084031 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:14:10.084031 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:14:10.084031 [debug] [MainThread]: Connection 'model.my_dbt_project.stg_properties' was properly closed.
+[0m17:14:10.084031 [debug] [MainThread]: Command end result
+[0m17:14:10.114225 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:14:10.114225 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:14:10.130295 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:14:10.130295 [info ] [MainThread]: Compiled node 'stg_properties' is:
+
+
+with source AS (
+    SELECT * FROM `savvy-depot-465313-h2`.`rightmove_property`.`raw_properties`
+)
+[0m17:14:10.135533 [debug] [MainThread]: Command `dbt compile` succeeded at 17:14:10.135533 after 6.91 seconds
+[0m17:14:10.135533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011978DB60B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000011979A57E80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001198C5B9990>]}
+[0m17:14:10.135533 [debug] [MainThread]: Flushing usage events
+[0m17:14:10.514855 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:04.643607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC90860E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC9F13640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC9F11870>]}
+
+
+============================== 17:18:04.661190 | 3cab4037-4e58-4332-b88d-bdb9b3fb8019 ==============================
+[0m17:18:04.661190 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:18:04.667274 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run --select stg_properties', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m17:18:07.959172 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF4E5E7D0>]}
+[0m17:18:08.020375 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FEBE6D1E0>]}
+[0m17:18:08.020375 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:18:08.667670 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:18:08.983713 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:18:08.983713 [debug] [MainThread]: Partial parsing: updated file: my_dbt_project://models\staging\stg_properties.sql
+[0m17:18:09.339109 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m17:18:09.350158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF6634400>]}
+[0m17:18:09.479733 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:18:09.479733 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:18:09.521871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF6634370>]}
+[0m17:18:09.521871 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 493 macros
+[0m17:18:09.523881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF6411930>]}
+[0m17:18:09.523881 [info ] [MainThread]: 
+[0m17:18:09.527763 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:18:09.527763 [info ] [MainThread]: 
+[0m17:18:09.532520 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:18:09.533875 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2'
+[0m17:18:09.535090 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:09.970072 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:18:09.972044 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:10.380380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC9F118A0>]}
+[0m17:18:10.382427 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:18:10.421403 [debug] [Thread-1 (]: Began running node model.my_dbt_project.stg_properties
+[0m17:18:10.421403 [info ] [Thread-1 (]: 1 of 1 START sql incremental model rightmove_property.stg_properties ........... [RUN]
+[0m17:18:10.421403 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.my_dbt_project.stg_properties'
+[0m17:18:10.439624 [debug] [Thread-1 (]: Began compiling node model.my_dbt_project.stg_properties
+[0m17:18:10.480805 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_project.stg_properties"
+[0m17:18:10.480805 [debug] [Thread-1 (]: Began executing node model.my_dbt_project.stg_properties
+[0m17:18:10.577570 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_project.stg_properties"
+[0m17:18:10.593364 [debug] [Thread-1 (]: On model.my_dbt_project.stg_properties: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.stg_properties"} */
+
+  
+    
+
+    create or replace table `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with source AS (
+    SELECT * FROM `savvy-depot-465313-h2`.`rightmove_property`.`raw_properties`
+)
+select * from source
+
+    );
+  
+[0m17:18:10.593364 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:18:11.394484 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:b5fb472f-18b4-4e18-bb83-4ab688f86ebb&page=queryresults
+[0m17:18:13.556499 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '3cab4037-4e58-4332-b88d-bdb9b3fb8019', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FEBEAA770>]}
+[0m17:18:13.556499 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model rightmove_property.stg_properties ...... [[32mCREATE TABLE (503.0 rows, 745.3 KiB processed)[0m in 3.10s]
+[0m17:18:13.556499 [debug] [Thread-1 (]: Finished running node model.my_dbt_project.stg_properties
+[0m17:18:13.565484 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:18:13.572137 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:18:13.574591 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2' was properly closed.
+[0m17:18:13.576627 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:18:13.577600 [debug] [MainThread]: Connection 'model.my_dbt_project.stg_properties' was properly closed.
+[0m17:18:13.578507 [info ] [MainThread]: 
+[0m17:18:13.582526 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 4.05 seconds (4.05s).
+[0m17:18:13.588510 [debug] [MainThread]: Command end result
+[0m17:18:13.665757 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:18:13.670872 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:18:13.682697 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:18:13.683700 [info ] [MainThread]: 
+[0m17:18:13.684601 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:18:13.685706 [info ] [MainThread]: 
+[0m17:18:13.686641 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:18:13.688651 [debug] [MainThread]: Command `dbt run` succeeded at 17:18:13.687652 after 9.32 seconds
+[0m17:18:13.688651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC90860E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF642DDE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC9156E30>]}
+[0m17:18:13.689652 [debug] [MainThread]: Flushing usage events
+[0m17:18:14.106070 [debug] [MainThread]: An error was encountered while trying to flush usage events
