@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: stg_properties
+    description: "A staging model for properties"
+    columns:
+      - name: price
+        description: "The primary key for this table"
+        data_tests:
+          - not_null
+          - dbt_utils.expression_is_true:
+              expression: ">= 0"
+
+      - name: address
+        description: "The URL of the property listing"
+        data_tests:
+          - not_null
+
+      - name: postcode
+        description: "The postcode of the property"
+        data_tests:
+          - not_null

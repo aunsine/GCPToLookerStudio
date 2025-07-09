@@ -783,3 +783,1197 @@ select * from source
 [0m17:18:13.688651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC90860E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FF642DDE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023FC9156E30>]}
 [0m17:18:13.689652 [debug] [MainThread]: Flushing usage events
 [0m17:18:14.106070 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:30:29.693194 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C96186140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C980123E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C98011AB0>]}
+
+
+============================== 17:30:29.693194 | 50c773ee-dd01-400b-8157-2d2c275be17d ==============================
+[0m17:30:29.693194 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:30:29.709253 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run --select stg_properties', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:30:33.610703 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '50c773ee-dd01-400b-8157-2d2c275be17d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C9506CBB0>]}
+[0m17:30:33.699328 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '50c773ee-dd01-400b-8157-2d2c275be17d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C980A29E0>]}
+[0m17:30:33.699328 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:30:34.444382 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:30:34.800510 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m17:30:34.800510 [debug] [MainThread]: Partial parsing: added file: my_dbt_project://models\staging\schema.yml
+[0m17:30:34.885015 [error] [MainThread]: Encountered an error:
+Compilation Error
+  dbt found two schema.yml entries for the same resource named my_second_dbt_model. Resources and their associated columns may only be described a single time. To fix this, remove the resource entry for my_second_dbt_model in one of these files:
+   - models\staging\schema.yml
+  models\example\schema.yml
+[0m17:30:34.885015 [debug] [MainThread]: Command `dbt run` failed at 17:30:34.885015 after 5.29 seconds
+[0m17:30:34.885015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021C96186140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CC3652680>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021CC3652740>]}
+[0m17:30:34.885015 [debug] [MainThread]: Flushing usage events
+[0m17:30:35.352505 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:32:10.904896 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921A986080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C16A590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C7CFD90>]}
+
+
+============================== 17:32:10.913142 | 26acd83a-d260-42ea-9bcb-38e7a4c0f3fd ==============================
+[0m17:32:10.913142 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:32:10.916232 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_properties', 'send_anonymous_usage_stats': 'True'}
+[0m17:32:14.172772 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C6E0130>]}
+[0m17:32:14.236079 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C8A3310>]}
+[0m17:32:14.236079 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:32:14.939986 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:32:15.204680 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 1 files added, 0 files changed.
+[0m17:32:15.205691 [debug] [MainThread]: Partial parsing: added file: my_dbt_project://models\staging\schema.yml
+[0m17:32:15.461041 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m17:32:15.476852 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029247F8C5E0>]}
+[0m17:32:15.590432 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:32:15.590432 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:32:15.628727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029247D15FC0>]}
+[0m17:32:15.628727 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 493 macros
+[0m17:32:15.628727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029247D15930>]}
+[0m17:32:15.628727 [info ] [MainThread]: 
+[0m17:32:15.628727 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:32:15.628727 [info ] [MainThread]: 
+[0m17:32:15.628727 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:32:15.636197 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2'
+[0m17:32:15.636991 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:32:16.086914 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:32:16.092483 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:32:16.507678 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C8772B0>]}
+[0m17:32:16.507678 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:32:16.517200 [debug] [Thread-1 (]: Began running node model.my_dbt_project.stg_properties
+[0m17:32:16.517200 [info ] [Thread-1 (]: 1 of 1 START sql incremental model rightmove_property.stg_properties ........... [RUN]
+[0m17:32:16.523006 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.my_dbt_project.stg_properties'
+[0m17:32:16.523006 [debug] [Thread-1 (]: Began compiling node model.my_dbt_project.stg_properties
+[0m17:32:16.541089 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_project.stg_properties"
+[0m17:32:16.543892 [debug] [Thread-1 (]: Began executing node model.my_dbt_project.stg_properties
+[0m17:32:16.585741 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:32:16.999897 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_project.stg_properties"
+[0m17:32:16.999897 [debug] [Thread-1 (]: On model.my_dbt_project.stg_properties: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.stg_properties"} */
+-- back compat for old kwarg name
+  
+  
+        
+            
+	    
+	    
+            
+        
+    
+
+    
+
+    merge into `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties` as DBT_INTERNAL_DEST
+        using (
+
+with source AS (
+    SELECT * FROM `savvy-depot-465313-h2`.`rightmove_property`.`raw_properties`
+)
+select * from source
+
+where property_id NOT IN (select property_id from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`)
+
+        ) as DBT_INTERNAL_SOURCE
+        on ((DBT_INTERNAL_SOURCE.property_id = DBT_INTERNAL_DEST.property_id))
+
+    
+    when matched then update set
+        `price` = DBT_INTERNAL_SOURCE.`price`,`type` = DBT_INTERNAL_SOURCE.`type`,`address` = DBT_INTERNAL_SOURCE.`address`,`url` = DBT_INTERNAL_SOURCE.`url`,`agent_url` = DBT_INTERNAL_SOURCE.`agent_url`,`number_bedrooms` = DBT_INTERNAL_SOURCE.`number_bedrooms`,`full_description` = DBT_INTERNAL_SOURCE.`full_description`,`agent_name` = DBT_INTERNAL_SOURCE.`agent_name`,`agent_address` = DBT_INTERNAL_SOURCE.`agent_address`,`postcode` = DBT_INTERNAL_SOURCE.`postcode`,`longitude` = DBT_INTERNAL_SOURCE.`longitude`,`latitude` = DBT_INTERNAL_SOURCE.`latitude`,`viewtype` = DBT_INTERNAL_SOURCE.`viewtype`,`propertytype` = DBT_INTERNAL_SOURCE.`propertytype`,`propertysubtype` = DBT_INTERNAL_SOURCE.`propertysubtype`,`added` = DBT_INTERNAL_SOURCE.`added`,`maxsizeft` = DBT_INTERNAL_SOURCE.`maxsizeft`,`retirement` = DBT_INTERNAL_SOURCE.`retirement`,`preowned` = DBT_INTERNAL_SOURCE.`preowned`,`input_file_name` = DBT_INTERNAL_SOURCE.`input_file_name`,`import_timestamp` = DBT_INTERNAL_SOURCE.`import_timestamp`
+    
+
+    when not matched then insert
+        (`price`, `type`, `address`, `url`, `agent_url`, `number_bedrooms`, `full_description`, `agent_name`, `agent_address`, `postcode`, `longitude`, `latitude`, `viewtype`, `propertytype`, `propertysubtype`, `added`, `maxsizeft`, `retirement`, `preowned`, `input_file_name`, `import_timestamp`)
+    values
+        (`price`, `type`, `address`, `url`, `agent_url`, `number_bedrooms`, `full_description`, `agent_name`, `agent_address`, `postcode`, `longitude`, `latitude`, `viewtype`, `propertytype`, `propertysubtype`, `added`, `maxsizeft`, `retirement`, `preowned`, `input_file_name`, `import_timestamp`)
+
+
+    
+[0m17:32:17.603712 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:de7f06ae-cc72-4c38-89b8-2baa67cb280c&page=queryresults
+[0m17:32:17.903951 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:de7f06ae-cc72-4c38-89b8-2baa67cb280c&page=queryresults
+[0m17:32:18.238207 [debug] [Thread-1 (]: Database Error in model stg_properties (models\staging\stg_properties.sql)
+  Unrecognized name: property_id; Did you mean propertytype? at [23:7]
+  compiled code at target\run\my_dbt_project\models\staging\stg_properties.sql
+[0m17:32:18.249098 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '26acd83a-d260-42ea-9bcb-38e7a4c0f3fd', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921A7835E0>]}
+[0m17:32:18.249098 [error] [Thread-1 (]: 1 of 1 ERROR creating sql incremental model rightmove_property.stg_properties .. [[31mERROR[0m in 1.73s]
+[0m17:32:18.249098 [debug] [Thread-1 (]: Finished running node model.my_dbt_project.stg_properties
+[0m17:32:18.264991 [debug] [Thread-5 (]: Marking all children of 'model.my_dbt_project.stg_properties' to be skipped because of status 'error'.  Reason: Database Error in model stg_properties (models\staging\stg_properties.sql)
+  Unrecognized name: property_id; Did you mean propertytype? at [23:7]
+  compiled code at target\run\my_dbt_project\models\staging\stg_properties.sql.
+[0m17:32:18.264991 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:32:18.291292 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:32:18.295269 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2' was properly closed.
+[0m17:32:18.298606 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:32:18.301595 [debug] [MainThread]: Connection 'model.my_dbt_project.stg_properties' was properly closed.
+[0m17:32:18.303493 [info ] [MainThread]: 
+[0m17:32:18.307484 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 2.67 seconds (2.67s).
+[0m17:32:18.312396 [debug] [MainThread]: Command end result
+[0m17:32:18.364294 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:32:18.368310 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:32:18.375867 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:32:18.375867 [info ] [MainThread]: 
+[0m17:32:18.375867 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:32:18.375867 [info ] [MainThread]: 
+[0m17:32:18.375867 [error] [MainThread]: [31mFailure in model stg_properties (models\staging\stg_properties.sql)[0m
+[0m17:32:18.375867 [error] [MainThread]:   Database Error in model stg_properties (models\staging\stg_properties.sql)
+  Unrecognized name: property_id; Did you mean propertytype? at [23:7]
+  compiled code at target\run\my_dbt_project\models\staging\stg_properties.sql
+[0m17:32:18.375867 [info ] [MainThread]: 
+[0m17:32:18.391815 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\stg_properties.sql
+[0m17:32:18.393206 [info ] [MainThread]: 
+[0m17:32:18.396127 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:32:18.399207 [debug] [MainThread]: Command `dbt run` failed at 17:32:18.399207 after 7.61 seconds
+[0m17:32:18.399207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921A986080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002921C8A3310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029247CE96F0>]}
+[0m17:32:18.400286 [debug] [MainThread]: Flushing usage events
+[0m17:32:18.812117 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:33:31.163248 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BC3A6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BE3123E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BE311AB0>]}
+
+
+============================== 17:33:31.179367 | 37c6996f-b2bd-4d47-9269-dedd9a0b29f4 ==============================
+[0m17:33:31.179367 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:33:31.179367 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt run --select stg_properties', 'send_anonymous_usage_stats': 'True'}
+[0m17:33:34.689981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BA270BB0>]}
+[0m17:33:34.753110 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1DF258DC0>]}
+[0m17:33:34.768883 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:33:35.444876 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:33:35.713740 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:33:35.714729 [debug] [MainThread]: Partial parsing: updated file: my_dbt_project://models\staging\stg_properties.sql
+[0m17:33:36.199751 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.example
+- models.staging
+[0m17:33:36.217739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1E9AD84F0>]}
+[0m17:33:36.322187 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:33:36.334280 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:33:36.354190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1E96F2AD0>]}
+[0m17:33:36.354190 [info ] [MainThread]: Found 3 models, 7 data tests, 1 source, 493 macros
+[0m17:33:36.354190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1E96DD390>]}
+[0m17:33:36.354190 [info ] [MainThread]: 
+[0m17:33:36.354190 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:33:36.354190 [info ] [MainThread]: 
+[0m17:33:36.354190 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:33:36.369996 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2'
+[0m17:33:36.369996 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:33:36.840216 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:33:36.840216 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:33:37.253614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BE311C60>]}
+[0m17:33:37.253614 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:33:37.269402 [debug] [Thread-1 (]: Began running node model.my_dbt_project.stg_properties
+[0m17:33:37.269402 [info ] [Thread-1 (]: 1 of 1 START sql table model rightmove_property.stg_properties ................. [RUN]
+[0m17:33:37.269402 [debug] [Thread-1 (]: Acquiring new bigquery connection 'model.my_dbt_project.stg_properties'
+[0m17:33:37.269402 [debug] [Thread-1 (]: Began compiling node model.my_dbt_project.stg_properties
+[0m17:33:37.307734 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_dbt_project.stg_properties"
+[0m17:33:37.309261 [debug] [Thread-1 (]: Began executing node model.my_dbt_project.stg_properties
+[0m17:33:37.338146 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:33:37.806375 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_dbt_project.stg_properties"
+[0m17:33:37.806375 [debug] [Thread-1 (]: On model.my_dbt_project.stg_properties: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "model.my_dbt_project.stg_properties"} */
+
+  
+    
+
+    create or replace table `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+      
+    
+    
+
+    OPTIONS()
+    as (
+      
+
+with source AS (
+    SELECT * FROM `savvy-depot-465313-h2`.`rightmove_property`.`raw_properties`
+)
+select * from source
+
+    );
+  
+[0m17:33:38.359355 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:a807af55-9e1a-44f7-ad32-f357b57de82d&page=queryresults
+[0m17:33:40.491315 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '37c6996f-b2bd-4d47-9269-dedd9a0b29f4', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1DF25A980>]}
+[0m17:33:40.491315 [info ] [Thread-1 (]: 1 of 1 OK created sql table model rightmove_property.stg_properties ............ [[32mCREATE TABLE (1.0k rows, 1.5 MiB processed)[0m in 3.22s]
+[0m17:33:40.491315 [debug] [Thread-1 (]: Finished running node model.my_dbt_project.stg_properties
+[0m17:33:40.491315 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:33:40.506309 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:33:40.507286 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2' was properly closed.
+[0m17:33:40.507804 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:33:40.507804 [debug] [MainThread]: Connection 'model.my_dbt_project.stg_properties' was properly closed.
+[0m17:33:40.509767 [info ] [MainThread]: 
+[0m17:33:40.510900 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 4.16 seconds (4.16s).
+[0m17:33:40.511899 [debug] [MainThread]: Command end result
+[0m17:33:40.568576 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:33:40.575109 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:33:40.599325 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:33:40.599325 [info ] [MainThread]: 
+[0m17:33:40.601333 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:33:40.601333 [info ] [MainThread]: 
+[0m17:33:40.601333 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m17:33:40.606139 [debug] [MainThread]: Command `dbt run` succeeded at 17:33:40.606139 after 9.59 seconds
+[0m17:33:40.608148 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BC3A6140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1BE3121A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A1E9A87F10>]}
+[0m17:33:40.608148 [debug] [MainThread]: Flushing usage events
+[0m17:33:41.025067 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:39:25.955624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D6A86050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D6B6D810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D8911A50>]}
+
+
+============================== 17:39:25.974759 | 41c3bc13-d057-430a-912b-dda094b9f3b1 ==============================
+[0m17:39:25.974759 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:39:25.991627 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt test', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:39:29.241832 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D48BD9C0>]}
+[0m17:39:29.304487 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D87E1390>]}
+[0m17:39:29.306492 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:39:29.989703 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:39:30.331248 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 1 files changed.
+[0m17:39:30.331248 [debug] [MainThread]: Partial parsing: added file: my_dbt_project://models\staging\stg_agents.sql
+[0m17:39:30.331248 [debug] [MainThread]: Partial parsing: added file: my_dbt_project://models\serving\fact_agents.sql
+[0m17:39:30.331248 [debug] [MainThread]: Partial parsing: updated file: my_dbt_project://models\staging\stg_properties.sql
+[0m17:39:30.822219 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 2 unused configuration paths:
+- models.staging
+- models.example
+[0m17:39:30.839361 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163051C5000>]}
+[0m17:39:30.969837 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:39:30.976091 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:39:31.011289 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163051B8D60>]}
+[0m17:39:31.011289 [info ] [MainThread]: Found 5 models, 7 data tests, 1 source, 493 macros
+[0m17:39:31.013297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000163051BAE00>]}
+[0m17:39:31.013297 [info ] [MainThread]: 
+[0m17:39:31.013297 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:39:31.016771 [info ] [MainThread]: 
+[0m17:39:31.016771 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:39:31.024880 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:39:31.025880 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:39:31.511346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '41c3bc13-d057-430a-912b-dda094b9f3b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D8910670>]}
+[0m17:39:31.511346 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:39:31.577370 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:39:31.581437 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m17:39:31.582487 [info ] [Thread-1 (]: 1 of 7 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m17:39:31.593111 [info ] [Thread-2 (]: 2 of 7 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m17:39:31.599202 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m17:39:31.606555 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778'
+[0m17:39:31.611635 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:39:31.615677 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m17:39:31.718974 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m17:39:31.720981 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m17:39:31.722995 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m17:39:31.755821 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:39:31.757712 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778"
+[0m17:39:31.761702 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m17:39:31.766061 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `savvy-depot-465313-h2`.`rightmove_property`.`my_first_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:31.767088 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `savvy-depot-465313-h2`.`rightmove_property`.`my_second_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:31.768066 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:39:31.769071 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:39:32.503806 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:a28adff2-3dcb-4efd-9e14-80defa1736b1&page=queryresults
+[0m17:39:32.503806 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:a28adff2-3dcb-4efd-9e14-80defa1736b1&page=queryresults
+[0m17:39:32.538326 [debug] [Thread-2 (]: Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m17:39:32.540533 [error] [Thread-2 (]: 2 of 7 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 0.94s]
+[0m17:39:32.542567 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778
+[0m17:39:32.542567 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:39:32.542567 [debug] [Thread-5 (]: Marking all children of 'test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_second_dbt_model_id.sql.
+[0m17:39:32.542567 [info ] [Thread-2 (]: 3 of 7 START test not_null_stg_properties_address .............................. [RUN]
+[0m17:39:32.552914 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_my_second_dbt_model_id.151b76d778, now test.my_dbt_project.not_null_stg_properties_address.51908108a4)
+[0m17:39:32.557716 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:56e71c6f-b6cf-4bb4-a86b-ee4af310021a&page=queryresults
+[0m17:39:32.557716 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:39:32.557716 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:56e71c6f-b6cf-4bb4-a86b-ee4af310021a&page=queryresults
+[0m17:39:32.574193 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:39:32.586148 [debug] [Thread-1 (]: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m17:39:32.592335 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:39:32.596332 [error] [Thread-1 (]: 1 of 7 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 1.00s]
+[0m17:39:32.609749 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:39:32.617695 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710
+[0m17:39:32.619650 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:39:32.620797 [debug] [Thread-5 (]: Marking all children of 'test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_first_dbt_model_id.sql.
+[0m17:39:32.622018 [info ] [Thread-1 (]: 4 of 7 START test not_null_stg_properties_postcode ............................. [RUN]
+[0m17:39:32.623046 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_address.51908108a4: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_address.51908108a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select address
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where address is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:32.623046 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_my_first_dbt_model_id.5fb22c2710, now test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d)
+[0m17:39:32.623046 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:39:32.623046 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:39:32.656659 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:39:32.673309 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:39:32.674230 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:39:32.674230 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select postcode
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where postcode is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:32.674230 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:39:33.579371 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:1c33731f-aef1-4a8b-9ba5-ec1d50d319fe&page=queryresults
+[0m17:39:33.643157 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:a7331c63-497e-4c63-866e-7c859407f3d0&page=queryresults
+[0m17:39:34.383608 [info ] [Thread-1 (]: 4 of 7 PASS not_null_stg_properties_postcode ................................... [[32mPASS[0m in 1.76s]
+[0m17:39:34.374465 [info ] [Thread-2 (]: 3 of 7 PASS not_null_stg_properties_address .................................... [[32mPASS[0m in 1.82s]
+[0m17:39:34.387659 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:39:34.387659 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:39:34.387659 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:39:34.392430 [debug] [Thread-2 (]: Began running node test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m17:39:34.392430 [info ] [Thread-1 (]: 5 of 7 START test not_null_stg_properties_price ................................ [RUN]
+[0m17:39:34.394438 [info ] [Thread-2 (]: 6 of 7 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m17:39:34.395162 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d, now test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c)
+[0m17:39:34.396281 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_stg_properties_address.51908108a4, now test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321)
+[0m17:39:34.397304 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:39:34.397802 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m17:39:34.401573 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:39:34.414329 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321"
+[0m17:39:34.414329 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:39:34.414329 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m17:39:34.425384 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:39:34.427856 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321"
+[0m17:39:34.427856 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:34.427856 [debug] [Thread-2 (]: On test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `savvy-depot-465313-h2`.`rightmove_property`.`my_first_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:34.427856 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:39:34.438835 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:39:35.435309 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:060241a7-3291-447e-849c-e5b5b36a3e80&page=queryresults
+[0m17:39:35.649207 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:b2544a91-99ab-4755-9b19-6ae0fd5d2a05&page=queryresults
+[0m17:39:35.652224 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:b2544a91-99ab-4755-9b19-6ae0fd5d2a05&page=queryresults
+[0m17:39:35.665510 [debug] [Thread-2 (]: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m17:39:35.669532 [error] [Thread-2 (]: 6 of 7 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 1.27s]
+[0m17:39:35.673670 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321
+[0m17:39:35.678812 [debug] [Thread-2 (]: Began running node test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:39:35.683712 [debug] [Thread-5 (]: Marking all children of 'test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_first_dbt_model_id.sql.
+[0m17:39:35.690252 [info ] [Thread-2 (]: 7 of 7 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m17:39:35.701105 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.unique_my_first_dbt_model_id.16e066b321, now test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493)
+[0m17:39:35.706522 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:39:35.730806 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m17:39:35.736176 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:39:35.745328 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"
+[0m17:39:35.752459 [debug] [Thread-2 (]: On test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with dbt_test__target as (
+
+  select id as unique_field
+  from `savvy-depot-465313-h2`.`rightmove_property`.`my_second_dbt_model`
+  where id is not null
+
+)
+
+select
+    unique_field,
+    count(*) as n_records
+
+from dbt_test__target
+group by unique_field
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:39:35.759028 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:39:35.907485 [error] [Thread-1 (]: 5 of 7 FAIL 4 not_null_stg_properties_price .................................... [[31mFAIL 4[0m in 1.51s]
+[0m17:39:35.917433 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:39:36.350515 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:ee38c410-be25-4ea8-92a9-f0636d30d49a&page=queryresults
+[0m17:39:36.350515 [error] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:ee38c410-be25-4ea8-92a9-f0636d30d49a&page=queryresults
+[0m17:39:36.366588 [debug] [Thread-2 (]: Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m17:39:36.373546 [error] [Thread-2 (]: 7 of 7 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 0.67s]
+[0m17:39:36.378072 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493
+[0m17:39:36.379534 [debug] [Thread-5 (]: Marking all children of 'test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_second_dbt_model_id.sql.
+[0m17:39:36.379534 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:39:36.396839 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:39:36.400882 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:39:36.401873 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c' was properly closed.
+[0m17:39:36.408418 [debug] [MainThread]: Connection 'test.my_dbt_project.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+[0m17:39:36.410612 [info ] [MainThread]: 
+[0m17:39:36.419248 [info ] [MainThread]: Finished running 7 data tests in 0 hours 0 minutes and 5.39 seconds (5.39s).
+[0m17:39:36.438476 [debug] [MainThread]: Command end result
+[0m17:39:36.682396 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:39:36.693818 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:39:36.698389 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:39:36.706178 [info ] [MainThread]: 
+[0m17:39:36.706178 [info ] [MainThread]: [31mCompleted with 5 errors, 0 partial successes, and 0 warnings:[0m
+[0m17:39:36.706178 [info ] [MainThread]: 
+[0m17:39:36.706178 [error] [MainThread]: [31mFailure in test not_null_my_second_dbt_model_id (models\example\schema.yml)[0m
+[0m17:39:36.706178 [error] [MainThread]:   Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m17:39:36.706178 [info ] [MainThread]: 
+[0m17:39:36.706178 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m17:39:36.706178 [info ] [MainThread]: 
+[0m17:39:36.713805 [error] [MainThread]: [31mFailure in test not_null_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m17:39:36.714814 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m17:39:36.716217 [info ] [MainThread]: 
+[0m17:39:36.716217 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m17:39:36.717312 [info ] [MainThread]: 
+[0m17:39:36.718751 [error] [MainThread]: [31mFailure in test unique_my_first_dbt_model_id (models\example\schema.yml)[0m
+[0m17:39:36.718751 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_first_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m17:39:36.721066 [info ] [MainThread]: 
+[0m17:39:36.722076 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m17:39:36.723673 [info ] [MainThread]: 
+[0m17:39:36.723673 [error] [MainThread]: [31mFailure in test not_null_stg_properties_price (models\staging\schema.yml)[0m
+[0m17:39:36.723673 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m17:39:36.726660 [info ] [MainThread]: 
+[0m17:39:36.727679 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\schema.yml\not_null_stg_properties_price.sql
+[0m17:39:36.728667 [info ] [MainThread]: 
+[0m17:39:36.728667 [error] [MainThread]: [31mFailure in test unique_my_second_dbt_model_id (models\example\schema.yml)[0m
+[0m17:39:36.730574 [error] [MainThread]:   Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  Not found: Table savvy-depot-465313-h2:rightmove_property.my_second_dbt_model was not found in location EU
+  compiled code at target\run\my_dbt_project\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m17:39:36.730574 [info ] [MainThread]: 
+[0m17:39:36.730574 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m17:39:36.730574 [info ] [MainThread]: 
+[0m17:39:36.730574 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=5 SKIP=0 NO-OP=0 TOTAL=7
+[0m17:39:36.730574 [debug] [MainThread]: Command `dbt test` failed at 17:39:36.730574 after 11.00 seconds
+[0m17:39:36.730574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D6A86050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D6B4DEA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000162D68310F0>]}
+[0m17:39:36.730574 [debug] [MainThread]: Flushing usage events
+[0m17:39:37.183456 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:40:03.517697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDE586080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBE044AB30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBE044B0D0>]}
+
+
+============================== 17:40:03.523228 | 8b90ace5-4921-4cc8-9911-f1489d1b4a38 ==============================
+[0m17:40:03.523228 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:40:03.525621 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m17:40:06.817190 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDEDBF970>]}
+[0m17:40:06.882105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBE02E1D50>]}
+[0m17:40:06.884112 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:40:07.581345 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:40:07.761547 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m17:40:07.761547 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDED69DE0>]}
+[0m17:40:09.328209 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.staging
+[0m17:40:09.343986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0BD4C130>]}
+[0m17:40:09.437987 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:40:09.437987 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:40:09.486420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0BD2CAC0>]}
+[0m17:40:09.486420 [info ] [MainThread]: Found 3 models, 3 data tests, 1 source, 493 macros
+[0m17:40:09.486420 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDE332DD0>]}
+[0m17:40:09.489443 [info ] [MainThread]: 
+[0m17:40:09.489443 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:40:09.489443 [info ] [MainThread]: 
+[0m17:40:09.489443 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:40:09.498458 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:40:09.499778 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:40:09.964499 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8b90ace5-4921-4cc8-9911-f1489d1b4a38', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0B9F5210>]}
+[0m17:40:09.964499 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:40:09.988488 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:40:09.988488 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:40:09.991660 [info ] [Thread-1 (]: 1 of 3 START test not_null_stg_properties_address .............................. [RUN]
+[0m17:40:09.991660 [info ] [Thread-2 (]: 2 of 3 START test not_null_stg_properties_postcode ............................. [RUN]
+[0m17:40:09.991660 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_stg_properties_address.51908108a4'
+[0m17:40:09.991660 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d'
+[0m17:40:09.991660 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:40:09.991660 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:40:10.032333 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:40:10.032333 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:40:10.032333 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:40:10.045964 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:40:10.070692 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:40:10.074807 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:40:10.077704 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_address.51908108a4: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_address.51908108a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select address
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where address is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:40:10.078707 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select postcode
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where postcode is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:40:10.079818 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:40:10.079818 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:40:10.749434 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:e1a3ad52-0b38-4864-9c14-cf4cd2ed5990&page=queryresults
+[0m17:40:10.795023 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:f2602f1e-ae00-40f3-b718-4509339d73de&page=queryresults
+[0m17:40:11.524908 [info ] [Thread-1 (]: 1 of 3 PASS not_null_stg_properties_address .................................... [[32mPASS[0m in 1.53s]
+[0m17:40:11.540780 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:40:11.540780 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:40:11.540780 [info ] [Thread-1 (]: 3 of 3 START test not_null_stg_properties_price ................................ [RUN]
+[0m17:40:11.556655 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_stg_properties_address.51908108a4, now test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c)
+[0m17:40:11.563335 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:40:11.599852 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:40:11.607952 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:40:11.635875 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:40:11.639618 [info ] [Thread-2 (]: 2 of 3 PASS not_null_stg_properties_postcode ................................... [[32mPASS[0m in 1.65s]
+[0m17:40:11.639618 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:40:11.657245 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:40:11.660616 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:40:12.252235 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:fb495aa6-8bd9-4032-9067-a686b8758fc5&page=queryresults
+[0m17:40:12.744245 [error] [Thread-1 (]: 3 of 3 FAIL 4 not_null_stg_properties_price .................................... [[31mFAIL 4[0m in 1.20s]
+[0m17:40:12.761607 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:40:12.778917 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:40:12.790046 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:40:12.794323 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:40:12.799080 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c' was properly closed.
+[0m17:40:12.803957 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d' was properly closed.
+[0m17:40:12.807841 [info ] [MainThread]: 
+[0m17:40:12.813565 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 3.32 seconds (3.32s).
+[0m17:40:12.830911 [debug] [MainThread]: Command end result
+[0m17:40:12.912523 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:40:12.918431 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:40:12.947872 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:40:12.951938 [info ] [MainThread]: 
+[0m17:40:12.954987 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:40:12.960265 [info ] [MainThread]: 
+[0m17:40:12.960265 [error] [MainThread]: [31mFailure in test not_null_stg_properties_price (models\staging\schema.yml)[0m
+[0m17:40:12.969551 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m17:40:12.976293 [info ] [MainThread]: 
+[0m17:40:12.978330 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\schema.yml\not_null_stg_properties_price.sql
+[0m17:40:12.989128 [info ] [MainThread]: 
+[0m17:40:12.991016 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=3
+[0m17:40:13.007321 [debug] [MainThread]: Command `dbt test` failed at 17:40:13.006268 after 9.65 seconds
+[0m17:40:13.008364 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FBDE586080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0BD2F850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FC0BD2FC10>]}
+[0m17:40:13.019115 [debug] [MainThread]: Flushing usage events
+[0m17:40:13.422931 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:50:41.350733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DBC860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DCB12050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DCB13430>]}
+
+
+============================== 17:50:41.355518 | 51333872-0e30-4a0e-b75e-6831ba16e4c3 ==============================
+[0m17:50:41.355518 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:50:41.355518 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt deps', 'send_anonymous_usage_stats': 'True'}
+[0m17:50:41.584360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '51333872-0e30-4a0e-b75e-6831ba16e4c3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DCB13A90>]}
+[0m17:50:42.085092 [debug] [MainThread]: Set downloads directory='C:\Users\Kwang\AppData\Local\Temp\dbt-downloads-aetd44i3'
+[0m17:50:42.085092 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:50:42.202562 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:50:42.208142 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:50:42.258076 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:50:42.292050 [info ] [MainThread]: Updating lock file in file path: C:\Users\Kwang\KwangExperiment\GCPToLookerStudio/package-lock.yml
+[0m17:50:42.319751 [debug] [MainThread]: Set downloads directory='C:\Users\Kwang\AppData\Local\Temp\dbt-downloads-cc6vu5sf'
+[0m17:50:42.324665 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:50:42.982251 [info ] [MainThread]: Installed from version 1.3.0
+[0m17:50:42.982251 [info ] [MainThread]: Up to date!
+[0m17:50:42.982251 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': '51333872-0e30-4a0e-b75e-6831ba16e4c3', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DBA74310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DCCBDB70>]}
+[0m17:50:42.992047 [debug] [MainThread]: Command `dbt deps` succeeded at 17:50:42.992047 after 1.91 seconds
+[0m17:50:42.992047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DBC860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DCB97CA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B8DBA74310>]}
+[0m17:50:42.992047 [debug] [MainThread]: Flushing usage events
+[0m17:50:43.389666 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:50:54.192049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F65D99FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F66C237C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F66C230D0>]}
+
+
+============================== 17:50:54.195437 | 4aa51b18-b3de-488e-a751-b0001740066f ==============================
+[0m17:50:54.195437 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:50:54.195437 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt test', 'send_anonymous_usage_stats': 'True'}
+[0m17:50:57.777576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F66576110>]}
+[0m17:50:57.841037 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F66CB3700>]}
+[0m17:50:57.841037 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:50:58.547199 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:50:58.699358 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m17:50:58.701368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F665760B0>]}
+[0m17:51:03.060738 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.staging
+[0m17:51:03.075507 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F13685690>]}
+[0m17:51:03.217465 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:51:03.217465 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:51:03.249531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F13657250>]}
+[0m17:51:03.249531 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 609 macros
+[0m17:51:03.249531 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F13644430>]}
+[0m17:51:03.249531 [info ] [MainThread]: 
+[0m17:51:03.249531 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:51:03.249531 [info ] [MainThread]: 
+[0m17:51:03.266019 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:51:03.266019 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:51:03.272152 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:51:03.802684 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4aa51b18-b3de-488e-a751-b0001740066f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F66C205E0>]}
+[0m17:51:03.820677 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:51:03.866931 [debug] [Thread-1 (]: Began running node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a
+[0m17:51:03.866931 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:51:03.873577 [info ] [Thread-1 (]: 1 of 4 START test dbt_utils_expression_is_true_stg_properties_price__price_0 ... [RUN]
+[0m17:51:03.882976 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_properties_address .............................. [RUN]
+[0m17:51:03.889519 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a'
+[0m17:51:03.896100 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_stg_properties_address.51908108a4'
+[0m17:51:03.901466 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a
+[0m17:51:03.906248 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:51:04.135101 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a"
+[0m17:51:04.137108 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:51:04.145733 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a
+[0m17:51:04.168310 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a"
+[0m17:51:04.168310 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:51:04.168310 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:51:04.168310 [debug] [Thread-1 (]: On test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+select
+    1
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+
+where not(price price >= 0)
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:51:04.168310 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:51:04.168310 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_address.51908108a4: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_address.51908108a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select address
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where address is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:51:04.177641 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:51:04.647599 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:23be4aef-e908-4263-b4a0-ad4cbf5aa6cd&page=queryresults
+[0m17:51:04.653640 [error] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:23be4aef-e908-4263-b4a0-ad4cbf5aa6cd&page=queryresults
+[0m17:51:04.690856 [debug] [Thread-1 (]: Database Error in test dbt_utils_expression_is_true_stg_properties_price__price_0 (models\staging\schema.yml)
+  Syntax error: Expected "," but got identifier "price" at [18:17]
+  compiled code at target\run\my_dbt_project\models\staging\schema.yml\dbt_utils_expression_is_true_stg_properties_price__price_0.sql
+[0m17:51:04.695443 [error] [Thread-1 (]: 1 of 4 ERROR dbt_utils_expression_is_true_stg_properties_price__price_0 ........ [[31mERROR[0m in 0.81s]
+[0m17:51:04.703644 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a
+[0m17:51:04.709572 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:51:04.711609 [debug] [Thread-5 (]: Marking all children of 'test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a' to be skipped because of status 'error'.  Reason: Database Error in test dbt_utils_expression_is_true_stg_properties_price__price_0 (models\staging\schema.yml)
+  Syntax error: Expected "," but got identifier "price" at [18:17]
+  compiled code at target\run\my_dbt_project\models\staging\schema.yml\dbt_utils_expression_is_true_stg_properties_price__price_0.sql.
+[0m17:51:04.714552 [info ] [Thread-1 (]: 3 of 4 START test not_null_stg_properties_postcode ............................. [RUN]
+[0m17:51:04.725049 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price__price_0.d1760bbd8a, now test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d)
+[0m17:51:04.727043 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:51:04.742024 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:51:04.742024 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:51:04.754030 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:51:04.754030 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select postcode
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where postcode is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:51:04.754030 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:51:04.927245 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:7443990a-7475-48e5-aca1-f9c2ad28da8b&page=queryresults
+[0m17:51:05.557721 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_properties_address .................................... [[32mPASS[0m in 1.66s]
+[0m17:51:05.559730 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:51:05.561736 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:51:05.561736 [info ] [Thread-2 (]: 4 of 4 START test not_null_stg_properties_price ................................ [RUN]
+[0m17:51:05.563741 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_stg_properties_address.51908108a4, now test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c)
+[0m17:51:05.563741 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:51:05.572335 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:51:05.572335 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:51:05.577500 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:51:05.577500 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:51:05.582326 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:51:05.877218 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:f2d564ed-7ee2-4995-bdbc-1375c3993794&page=queryresults
+[0m17:51:06.292546 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:ff1cc8ee-1071-4a06-83b3-70732d309b3a&page=queryresults
+[0m17:51:06.414470 [info ] [Thread-1 (]: 3 of 4 PASS not_null_stg_properties_postcode ................................... [[32mPASS[0m in 1.69s]
+[0m17:51:06.424483 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:51:06.750928 [error] [Thread-2 (]: 4 of 4 FAIL 4 not_null_stg_properties_price .................................... [[31mFAIL 4[0m in 1.19s]
+[0m17:51:06.763331 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:51:06.773166 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:51:06.790418 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:51:06.792417 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:51:06.792417 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d' was properly closed.
+[0m17:51:06.792417 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c' was properly closed.
+[0m17:51:06.807148 [info ] [MainThread]: 
+[0m17:51:06.811283 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 3.54 seconds (3.54s).
+[0m17:51:06.825548 [debug] [MainThread]: Command end result
+[0m17:51:06.919527 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:51:06.927105 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:51:06.950864 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:51:06.950864 [info ] [MainThread]: 
+[0m17:51:06.966873 [info ] [MainThread]: [31mCompleted with 2 errors, 0 partial successes, and 0 warnings:[0m
+[0m17:51:06.966873 [info ] [MainThread]: 
+[0m17:51:06.966873 [error] [MainThread]: [31mFailure in test dbt_utils_expression_is_true_stg_properties_price__price_0 (models\staging\schema.yml)[0m
+[0m17:51:06.981025 [error] [MainThread]:   Database Error in test dbt_utils_expression_is_true_stg_properties_price__price_0 (models\staging\schema.yml)
+  Syntax error: Expected "," but got identifier "price" at [18:17]
+  compiled code at target\run\my_dbt_project\models\staging\schema.yml\dbt_utils_expression_is_true_stg_properties_price__price_0.sql
+[0m17:51:06.984350 [info ] [MainThread]: 
+[0m17:51:06.992709 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\schema.yml\dbt_utils_expression_is_true_stg_properties_price__price_0.sql
+[0m17:51:06.992709 [info ] [MainThread]: 
+[0m17:51:07.000539 [error] [MainThread]: [31mFailure in test not_null_stg_properties_price (models\staging\schema.yml)[0m
+[0m17:51:07.005662 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m17:51:07.005662 [info ] [MainThread]: 
+[0m17:51:07.011204 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\schema.yml\not_null_stg_properties_price.sql
+[0m17:51:07.016312 [info ] [MainThread]: 
+[0m17:51:07.018321 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=2 SKIP=0 NO-OP=0 TOTAL=4
+[0m17:51:07.019324 [debug] [MainThread]: Command `dbt test` failed at 17:51:07.019324 after 12.99 seconds
+[0m17:51:07.019324 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F65D99FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F65E50E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F132B5870>]}
+[0m17:51:07.027449 [debug] [MainThread]: Flushing usage events
+[0m17:51:07.469489 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:55:45.014315 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227704860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002277234CDC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002277234C820>]}
+
+
+============================== 17:55:45.014315 | 87043799-5ad0-4b18-8a7e-6f70d4b7deb8 ==============================
+[0m17:55:45.014315 [info ] [MainThread]: Running with dbt=1.10.3
+[0m17:55:45.014315 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Kwang\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\Kwang\\KwangExperiment\\GCPToLookerStudio\\logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt test', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:55:48.305809 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227705407F0>]}
+[0m17:55:48.381231 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022781354BB0>]}
+[0m17:55:48.383237 [info ] [MainThread]: Registered adapter: bigquery=1.9.2
+[0m17:55:49.016774 [debug] [MainThread]: checksum: 1bfacb87e6914c9942cfa2c4badfc1df19d859fe8ec086286ef238a7d920f97b, vars: {}, profile: , target: , version: 1.10.3
+[0m17:55:49.395302 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m17:55:49.408193 [debug] [MainThread]: Partial parsing: updated file: my_dbt_project://models\staging\schema.yml
+[0m17:55:49.878067 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.staging
+[0m17:55:49.901362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278BCCD1B0>]}
+[0m17:55:50.000164 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:55:50.016756 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:55:50.052270 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278B88A860>]}
+[0m17:55:50.055374 [info ] [MainThread]: Found 3 models, 4 data tests, 1 source, 609 macros
+[0m17:55:50.056603 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278B8899C0>]}
+[0m17:55:50.056603 [info ] [MainThread]: 
+[0m17:55:50.056603 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:55:50.056603 [info ] [MainThread]: 
+[0m17:55:50.065390 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:55:50.068837 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_savvy-depot-465313-h2_rightmove_property'
+[0m17:55:50.068837 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:55:50.589015 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '87043799-5ad0-4b18-8a7e-6f70d4b7deb8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278B6221A0>]}
+[0m17:55:50.589015 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:55:50.637322 [debug] [Thread-1 (]: Began running node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e
+[0m17:55:50.653135 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:55:50.653135 [info ] [Thread-1 (]: 1 of 4 START test dbt_utils_expression_is_true_stg_properties_price___0 ........ [RUN]
+[0m17:55:50.653135 [info ] [Thread-2 (]: 2 of 4 START test not_null_stg_properties_address .............................. [RUN]
+[0m17:55:50.653135 [debug] [Thread-1 (]: Acquiring new bigquery connection 'test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e'
+[0m17:55:50.671743 [debug] [Thread-2 (]: Acquiring new bigquery connection 'test.my_dbt_project.not_null_stg_properties_address.51908108a4'
+[0m17:55:50.677414 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e
+[0m17:55:50.681824 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:55:50.705454 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e"
+[0m17:55:50.747689 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:55:50.759729 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e
+[0m17:55:50.765727 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:55:50.815169 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e"
+[0m17:55:50.817592 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_address.51908108a4"
+[0m17:55:50.817592 [debug] [Thread-1 (]: On test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+select
+    1
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+
+where not(price >= 0)
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:55:50.817592 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m17:55:50.817592 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_address.51908108a4: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_address.51908108a4"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select address
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where address is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:55:50.851179 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:55:51.582653 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:b95521e0-a0b0-4e15-a781-54f9a34b83b1&page=queryresults
+[0m17:55:51.710221 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:367dcda8-8ccd-4ed3-b652-b344398adedb&page=queryresults
+[0m17:55:52.325710 [info ] [Thread-1 (]: 1 of 4 PASS dbt_utils_expression_is_true_stg_properties_price___0 .............. [[32mPASS[0m in 1.67s]
+[0m17:55:52.336578 [info ] [Thread-2 (]: 2 of 4 PASS not_null_stg_properties_address .................................... [[32mPASS[0m in 1.67s]
+[0m17:55:52.338640 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e
+[0m17:55:52.342733 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_address.51908108a4
+[0m17:55:52.342733 [debug] [Thread-1 (]: Began running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:55:52.342733 [debug] [Thread-2 (]: Began running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:55:52.356773 [info ] [Thread-1 (]: 3 of 4 START test not_null_stg_properties_postcode ............................. [RUN]
+[0m17:55:52.361053 [info ] [Thread-2 (]: 4 of 4 START test not_null_stg_properties_price ................................ [RUN]
+[0m17:55:52.361755 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.dbt_utils_expression_is_true_stg_properties_price___0.11ef3a055e, now test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d)
+[0m17:55:52.362766 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly test.my_dbt_project.not_null_stg_properties_address.51908108a4, now test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c)
+[0m17:55:52.364875 [debug] [Thread-1 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:55:52.365876 [debug] [Thread-2 (]: Began compiling node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:55:52.378066 [debug] [Thread-1 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:55:52.585513 [debug] [Thread-2 (]: Writing injected SQL for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:55:52.585513 [debug] [Thread-1 (]: Began executing node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:55:52.585513 [debug] [Thread-2 (]: Began executing node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:55:52.585513 [debug] [Thread-1 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"
+[0m17:55:52.602263 [debug] [Thread-2 (]: Writing runtime sql for node "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"
+[0m17:55:52.602263 [debug] [Thread-1 (]: On test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select postcode
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where postcode is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:55:52.605786 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m17:55:52.605786 [debug] [Thread-2 (]: On test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c: /* {"app": "dbt", "dbt_version": "1.10.3", "profile_name": "my_dbt_project", "target_name": "dev", "node_id": "test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c"} */
+
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select price
+from `savvy-depot-465313-h2`.`rightmove_property`.`stg_properties`
+where price is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:55:52.655720 [debug] [Thread-2 (]: Opening a new connection, currently in state closed
+[0m17:55:53.317814 [debug] [Thread-2 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:ee5d14ce-3258-41ac-9b7f-cc69905b9d80&page=queryresults
+[0m17:55:53.349183 [debug] [Thread-1 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=savvy-depot-465313-h2&j=bq:EU:48291e97-7595-4666-9ec3-154b4fe230da&page=queryresults
+[0m17:55:53.763914 [error] [Thread-2 (]: 4 of 4 FAIL 4 not_null_stg_properties_price .................................... [[31mFAIL 4[0m in 1.40s]
+[0m17:55:53.763914 [debug] [Thread-2 (]: Finished running node test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c
+[0m17:55:53.826193 [info ] [Thread-1 (]: 3 of 4 PASS not_null_stg_properties_postcode ................................... [[32mPASS[0m in 1.46s]
+[0m17:55:53.834190 [debug] [Thread-1 (]: Finished running node test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d
+[0m17:55:53.842320 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:55:53.850463 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:55:53.854143 [debug] [MainThread]: Connection 'list_savvy-depot-465313-h2_rightmove_property' was properly closed.
+[0m17:55:53.856963 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_postcode.aa3de5822d' was properly closed.
+[0m17:55:53.859085 [debug] [MainThread]: Connection 'test.my_dbt_project.not_null_stg_properties_price.6d3fbf6b0c' was properly closed.
+[0m17:55:53.865858 [info ] [MainThread]: 
+[0m17:55:53.871370 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 3.79 seconds (3.79s).
+[0m17:55:53.884973 [debug] [MainThread]: Command end result
+[0m17:55:53.956622 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\manifest.json
+[0m17:55:53.959672 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\semantic_manifest.json
+[0m17:55:53.969134 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\Kwang\KwangExperiment\GCPToLookerStudio\target\run_results.json
+[0m17:55:53.970134 [info ] [MainThread]: 
+[0m17:55:53.971134 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:55:53.972153 [info ] [MainThread]: 
+[0m17:55:53.974135 [error] [MainThread]: [31mFailure in test not_null_stg_properties_price (models\staging\schema.yml)[0m
+[0m17:55:53.975134 [error] [MainThread]:   Got 4 results, configured to fail if != 0
+[0m17:55:53.976136 [info ] [MainThread]: 
+[0m17:55:53.979144 [info ] [MainThread]:   compiled code at target\compiled\my_dbt_project\models\staging\schema.yml\not_null_stg_properties_price.sql
+[0m17:55:53.980135 [info ] [MainThread]: 
+[0m17:55:53.981155 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 NO-OP=0 TOTAL=4
+[0m17:55:53.984134 [debug] [MainThread]: Command `dbt test` failed at 17:55:53.984134 after 9.09 seconds
+[0m17:55:53.984875 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227704860B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278BCFC700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002278BCFC8B0>]}
+[0m17:55:53.986220 [debug] [MainThread]: Flushing usage events
+[0m17:55:54.412268 [debug] [MainThread]: An error was encountered while trying to flush usage events

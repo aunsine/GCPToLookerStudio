@@ -1,2 +1,4 @@
 .venv/*
 myenv/*
+dbt_packages/dbt_utils/*
+target/*

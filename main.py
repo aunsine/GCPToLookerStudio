@@ -4,7 +4,7 @@ import pandas as pd
 from google.cloud import bigquery
 
 # CONFIGURATION 🛠️
-DATA_DIR = "my_dbt_project/input"
+DATA_DIR = "input"
 FILES = ["properties_1.txt", "properties_2.txt", "properties_3.txt"]
 
 PROJECT_ID = "savvy-depot-465313-h2"

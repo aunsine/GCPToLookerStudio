@@ -15,5 +15,3 @@ clean-targets:
 models:
   staging:
     materialized: view
-  example:
-    materialized: view
