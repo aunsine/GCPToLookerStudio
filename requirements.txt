@@ -1,0 +1,3 @@
+pands
+google-cloud-bigquery
+pyarrow
