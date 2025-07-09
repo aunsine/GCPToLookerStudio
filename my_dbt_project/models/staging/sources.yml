@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: rightmove_property
+    database: savvy-depot-465313-h2
+    schema: rightmove_property
+    tables:
+      - name: raw_properties

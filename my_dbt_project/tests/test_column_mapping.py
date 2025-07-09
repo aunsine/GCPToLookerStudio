@@ -1,7 +1,7 @@
 # tests/test_column_mapping.py
 
 import pandas as pd
-from main import sanitize_columns  # Assuming this function is in your main.py
+from my_dbt_project.main import sanitize_columns  # Assuming this function is in your main.py
 
 def test_sanitize_columns_mapping():
     raw_columns = {
