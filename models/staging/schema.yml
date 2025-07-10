@@ -19,9 +19,11 @@ models:
         data_tests:
           - not_null
     tests:
-      - dbt_utils.unique_combination_of_columns:
+      - dbt_utils.unique_combination_of_columns:      # Unique combination of columns Agent Name and Agent URL
           combination_of_columns: ['agent_name', 'agent_url']
-      - dbt_utils.expression_is_true:
+      - dbt_utils.unique_combination_of_columns:     # Unique combination of columns URL and Date the property is added 
+          combination_of_columns: ['url', 'added']
+      - dbt_utils.expression_is_true:       # Ensure that the price is non-negative 
           expression: "price >= 0"
 
   - name: stg_agents
@@ -42,5 +44,5 @@ models:
         data_tests:
           - not_null
     tests:
-      - dbt_utils.unique_combination_of_columns:
-          combination_of_columns: ['agent_name', 'agent_url','agent_address']
+      - dbt_utils.unique_combination_of_columns: # Unique combination of columns Agent Name, Agent URL, and Agent Address
+          combination_of_columns: ['agent_name', 'agent_url','agent_address'] 
