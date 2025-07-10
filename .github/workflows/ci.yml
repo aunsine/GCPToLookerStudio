@@ -31,7 +31,7 @@ jobs:
       - name: Set up dbt profile
         run: |
           mkdir -p ~/.dbt
-          echo "${{ secrets.DBT_PROFILES_YML }}" > ~/.dbt/profiles.yml
+          printf "%s" "${{ secrets.DBT_PROFILES_YML }}" > ~/.dbt/profiles.yml
           
       - name: Install dbt packages
         run: dbt deps
