@@ -22,7 +22,7 @@ WITH source AS (
     NULLIF(TRIM(viewtype),'') AS viewtype,
     NULLIF(TRIM(propertytype),'') AS propertytype,
     NULLIF(TRIM(propertysubtype),'') AS propertysubtype,
-    SAFE_CAST( NULLIF(TRIM(added), '') AS DATE FORMAT '%Y%m%d' ) AS added,
+    SAFE.PARSE_DATE('%Y%m%d', NULLIF(TRIM(added), '') ) AS added,
     SAFE_CAST(maxsizeft AS FLOAT64) AS maxsizeft,
     SAFE_CAST(retirement AS BOOLEAN) AS retirement,
     SAFE_CAST(preowned AS BOOLEAN) AS preowned,
