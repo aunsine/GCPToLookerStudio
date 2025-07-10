@@ -8,8 +8,6 @@ models:
         description: "The primary key for this table"
         data_tests:
           - not_null
-          - dbt_utils.expression_is_true:
-              expression: ">= 0"
 
       - name: address
         description: "The URL of the property listing"
@@ -20,3 +18,29 @@ models:
         description: "The postcode of the property"
         data_tests:
           - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ['agent_name', 'agent_url']
+      - dbt_utils.expression_is_true:
+          expression: "price >= 0"
+
+  - name: stg_agents
+    description: "A staging model for agents"
+    columns:
+      - name: agent_name
+        description: "The name of the agent"
+        data_tests:
+          - not_null
+
+      - name: agent_address
+        description: "The address of the agent"
+        data_tests:
+          - not_null
+
+      - name: agent_url
+        description: "The URL of the agent's profile"
+        data_tests:
+          - not_null
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns: ['agent_name', 'agent_url','agent_address']
