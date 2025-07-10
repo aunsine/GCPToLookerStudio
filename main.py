@@ -14,13 +14,14 @@ TABLE_REF = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
 
 client = bigquery.Client(project=PROJECT_ID)
 
-# Utility Functions
+# Start Utility Functions
 def load_json_split(file_path):
     with open(file_path, "r", encoding="utf-8-sig") as f:
         raw = json.loads(f.read().strip())
     return pd.DataFrame(data=raw["data"], columns=raw["columns"])
 
 def sanitize_columns(df):
+    """Sanitize DataFrame column names to be BigQuery compatible."""
     df.columns = (
         df.columns
         .str.strip()
@@ -31,6 +32,7 @@ def sanitize_columns(df):
     return df
 
 def ensure_table_exists(schema):
+    """Ensure the BigQuery table exists, creating it if necessary."""
     try:
         client.get_table(TABLE_REF)
         print(f"Table '{TABLE_ID}' exists.")
@@ -41,6 +43,7 @@ def ensure_table_exists(schema):
         print(f"Table '{TABLE_ID}' created.")
 
 def align_types(df, schema_fields, auto_cast=True):
+    """Align DataFrame types with BigQuery schema."""
     df = df.copy()
     type_map = {
         "STRING": str,
@@ -67,6 +70,7 @@ def align_types(df, schema_fields, auto_cast=True):
     return df
 
 def infer_schema(df):
+    """Infer BigQuery schema from DataFrame."""
     gbq_schema = []
     for col, dtype in df.dtypes.items():
         if "int" in str(dtype):
@@ -89,24 +93,20 @@ def ingest_files(file_list):
         print(f"Loading {file}...")
         df = load_json_split(path)
         df = sanitize_columns(df)
-        df["input_file_name"] = file
-        df["import_timestamp"] = pd.Timestamp.now(tz="UTC")
+        df["input_file_name"] = file                        # Added file name
+        df["import_timestamp"] = pd.Timestamp.now(tz="UTC") # Added import timestamp for each file.
         all_dataframes.append(df)
     return pd.concat(all_dataframes, ignore_index=True)
+# End Utility Functions
 
-# Main Ingestion
 def main():
     print("Starting ingestion...")
-    sample_df = load_json_split(os.path.join(DATA_DIR, FILES[0]))
-    sample_df = sanitize_columns(sample_df)
-    sample_df["input_file_name"] = FILES[0]
-    sample_df["import_timestamp"] = pd.Timestamp.now(tz="UTC")
-    gbq_schema = infer_schema(sample_df)
-
-    ensure_table_exists(gbq_schema)
-
-    combined_df = ingest_files(FILES)
-    combined_df = align_types(combined_df, gbq_schema)
+    combined_df = ingest_files(FILES)       #Ingest file and added 2 additional columns: `input_file_name` and `import_timestamp`.
+    gbq_schema = infer_schema(combined_df)  # Infer schema from the combined DataFrame
+    
+    ensure_table_exists(gbq_schema)         # Ensure the table exists with the inferred schema, if not create it.
+    
+    combined_df = align_types(combined_df, gbq_schema) # Align DataFrame types with BigQuery schema
 
     job = client.load_table_from_dataframe(combined_df, TABLE_REF)
     job.result()
