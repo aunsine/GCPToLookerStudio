@@ -1,4 +1,10 @@
 .venv/*
 myenv/*
 dbt_packages/dbt_utils/*
-target/*
+target
+target/run/*
+target/compile/*
+target/graph_summary.json
+target/graph.gpickle
+target/manifest.json
+logs/dbt.log
