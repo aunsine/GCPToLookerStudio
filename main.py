@@ -14,7 +14,7 @@ TABLE_REF = f"{PROJECT_ID}.{DATASET_ID}.{TABLE_ID}"
 
 client = bigquery.Client(project=PROJECT_ID)
 
-# ⬇️ Utility Functions
+# Utility Functions
 def load_json_split(file_path):
     with open(file_path, "r", encoding="utf-8-sig") as f:
         raw = json.loads(f.read().strip())
@@ -33,12 +33,12 @@ def sanitize_columns(df):
 def ensure_table_exists(schema):
     try:
         client.get_table(TABLE_REF)
-        print(f"✅ Table '{TABLE_ID}' exists.")
+        print(f"Table '{TABLE_ID}' exists.")
     except Exception:
         print(f"📦 Creating table '{TABLE_ID}'...")
         table = bigquery.Table(TABLE_REF, schema=schema)
         client.create_table(table)
-        print(f"✅ Table '{TABLE_ID}' created.")
+        print(f"Table '{TABLE_ID}' created.")
 
 def align_types(df, schema_fields, auto_cast=True):
     df = df.copy()
@@ -63,7 +63,7 @@ def align_types(df, schema_fields, auto_cast=True):
                     else:
                         df[col] = df[col].astype(target_type)
                 except Exception as e:
-                    print(f"❌ Error casting '{col}' → {expected_type}: {e}")
+                    print(f"Error casting '{col}' → {expected_type}: {e}")
     return df
 
 def infer_schema(df):
@@ -86,7 +86,7 @@ def ingest_files(file_list):
     all_dataframes = []
     for file in file_list:
         path = os.path.join(DATA_DIR, file)
-        print(f"📥 Loading {file}...")
+        print(f"Loading {file}...")
         df = load_json_split(path)
         df = sanitize_columns(df)
         df["input_file_name"] = file
@@ -94,9 +94,9 @@ def ingest_files(file_list):
         all_dataframes.append(df)
     return pd.concat(all_dataframes, ignore_index=True)
 
-# 🚀 Main Ingestion
+# Main Ingestion
 def main():
-    print("🚀 Starting ingestion...")
+    print("Starting ingestion...")
     sample_df = load_json_split(os.path.join(DATA_DIR, FILES[0]))
     sample_df = sanitize_columns(sample_df)
     sample_df["input_file_name"] = FILES[0]
@@ -111,7 +111,7 @@ def main():
     job = client.load_table_from_dataframe(combined_df, TABLE_REF)
     job.result()
 
-    print(f"🎉 Uploaded {len(combined_df)} records from {len(FILES)} files to {TABLE_REF}")
+    print(f"Uploaded {len(combined_df)} records from {len(FILES)} files to {TABLE_REF}")
 
 if __name__ == "__main__":
     main()
