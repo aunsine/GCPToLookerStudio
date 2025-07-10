@@ -7,4 +7,4 @@ target/compile/*
 target/graph_summary.json
 target/graph.gpickle
 target/manifest.json
-logs/dbt.log
+logs/*
