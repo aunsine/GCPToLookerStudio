@@ -1,10 +1,7 @@
 .venv/*
 myenv/*
 dbt_packages/dbt_utils/*
-target
-target/run/*
-target/compile/*
-target/graph_summary.json
-target/graph.gpickle
-target/manifest.json
+target/*
 logs/*
+__pycache__/*
+*.pyc

@@ -47,23 +47,6 @@ jobs:
       - name: Run dbt test
         run: dbt test
 
-      - name: Log in to GitHub Container Registry
-        uses: docker/login-action@v3
-        with:
-          registry: ghcr.io
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build Docker image
-        run: |
-          docker build -t ghcr.io/${{ github.repository }}:latest .
-
-      - name: Push Docker image
-        run: |
-          docker push ghcr.io/${{ github.repository }}:latest
-
-
-
       - name: Slack notification on failure
         if: failure()
         uses: slackapi/slack-github-action@v1.25.0

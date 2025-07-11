@@ -3,7 +3,7 @@
         materialized='incremental',
         incremental_strategy='merge',
         unique_key='agent_name',
-        tags=['staging', 'properties']
+        tags=['serving', 'properties']
     )
 }}
 

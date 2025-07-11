@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: stg_properties
-    description: "A staging model for properties"
+  - name: srv_properties
+    description: "A serving model for properties"
     columns:
       - name: url
         description: "The URL of the property listing"
@@ -19,13 +19,15 @@ models:
         data_tests:
           - not_null
     tests:
+      - dbt_utils.unique_combination_of_columns:      # Unique combination of columns Agent Name and Agent URL
+          combination_of_columns: ['agent_name', 'agent_url']
       - dbt_utils.unique_combination_of_columns:     # Unique combination of columns URL and Date the property is added 
           combination_of_columns: ['url', 'added']
       - dbt_utils.expression_is_true:       # Ensure that the price is non-negative 
           expression: "price >= 0"
 
-  - name: stg_agents
-    description: "A staging model for agents"
+  - name: dim_agents
+    description: "A serving model for agents"
     columns:
       - name: agent_name
         description: "The name of the agent"

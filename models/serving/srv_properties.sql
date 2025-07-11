@@ -1,7 +1,7 @@
 {{ 
     config(
         materialized='incremental',
-        tags=['staging', 'properties'],
+        tags=['serving', 'properties'],
         incremental_strategy='merge',
         unique_key= ['url'],
         partition_by={
