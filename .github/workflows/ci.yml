@@ -31,7 +31,7 @@ jobs:
       - name: Set up dbt profile
         run: |
           mkdir -p ~/.dbt
-          printf "%s" "${{ secrets.DBT_PROFILES_YML }}" > ~/.dbt/profiles.yml
+          echo "${{ secrets.DBT_PROFILES_YML_B64 }}" | base64 -d > ~/.dbt/profiles.yml
 
       - name: Check dbt profile file
         run: |
