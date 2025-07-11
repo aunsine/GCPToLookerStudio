@@ -32,6 +32,11 @@ jobs:
         run: |
           mkdir -p ~/.dbt
           printf "%s" "${{ secrets.DBT_PROFILES_YML }}" > ~/.dbt/profiles.yml
+
+      - name: Check dbt profile file
+        run: |
+          ls -l ~/.dbt/
+          head ~/.dbt/profiles.yml
           
       - name: Install dbt packages
         run: dbt deps
@@ -56,6 +61,8 @@ jobs:
       - name: Push Docker image
         run: |
           docker push ghcr.io/${{ github.repository }}:latest
+
+
 
       - name: Slack notification on failure
         if: failure()
