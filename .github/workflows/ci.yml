@@ -36,7 +36,7 @@ jobs:
       - name: Check dbt profile file
         run: |
           ls -l ~/.dbt/
-          head ~/.dbt/profiles.yml
+          cat ~/.dbt/profiles.yml
           
       - name: Install dbt packages
         run: dbt deps
