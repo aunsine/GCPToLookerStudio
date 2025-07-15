@@ -5,9 +5,10 @@ GCPToLookerStudio is an Analytic Engineering project that extracts, transforms, 
 
 ## Project Structure
 - **main.py**: Core ETL logic and utility functions.
-- **my_dbt_project/**: Contains dbt models, tests, and configuration for data transformation.
+- **my_dbt_project/**: Contains tests, and configuration for data transformation.
+- **models**: Contains staging and serving models.
 - **input/**: Directory for raw input files (e.g., properties_1.txt, properties_2.txt).
-- **output/**: Processed data and results (if applicable).
+- **my_dbt_project/test/**: Unittest and custom test.
 - **.github/workflows/ci.yml**: CI/CD pipeline for automated testing and deployment.
 
 ## Data Flow
@@ -32,3 +33,4 @@ GCPToLookerStudio is an Analytic Engineering project that extracts, transforms, 
 
 ## Contact
 For questions or support, please open an issue or contact the
+# test ci flow
