@@ -33,4 +33,3 @@ GCPToLookerStudio is an Analytic Engineering project that extracts, transforms, 
 
 ## Contact
 For questions or support, please open an issue or contact the
-# test ci flow
