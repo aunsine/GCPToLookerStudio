@@ -32,5 +32,4 @@ GCPToLookerStudio is an Analytic Engineering project that extracts, transforms, 
 4. Run the ETL and dbt models locally or via CI/CD.
 
 ## Contact
-For questions or support, please open an issue or contact the
-# test
+For questions or support, please open an issue or contact
