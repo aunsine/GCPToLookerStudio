@@ -31,5 +31,9 @@ GCPToLookerStudio is an Analytic Engineering project that extracts, transforms, 
 3. Configure your dbt profile and Google Cloud credentials.
 4. Run the ETL and dbt models locally or via CI/CD.
 
+## The project demo video
+[Watch the demo video](https://drive.google.com/file/d/1B-EZCcaQZ-pAKvYnakRlpxkR5CJ4NVXt/view?usp=drive_link) 
+   
+
 ## Contact
 For questions or support, please open an issue or contact
